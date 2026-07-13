@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16 lg:py-28;
+  }
+
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #D4AF37 0%, #F0D9A8 50%, #D4AF37 100%);
+  }
+
+  .dark-gradient {
+    background: linear-gradient(180deg, #1A1A1A 0%, #111111 100%);
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-in {
+    animation: fadeSlideIn 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A028;
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4;
+}
+
+.lightbox-content {
+  @apply relative max-w-4xl max-h-[90vh] w-full;
+}
+
+.lightbox-content img {
+  @apply w-full h-auto object-contain rounded-lg;
+}
