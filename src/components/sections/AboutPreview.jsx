@@ -59,7 +59,7 @@ export default function AboutPreview() {
             {/* Building Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-lg shadow-black/10">
               <img
-                src="/assets/building-project.png"
+                src="assets/building-project.png"
                 alt="Kunj Bihari Enclave - Premium Residential Project"
                 className="w-full h-64 md:h-72 object-cover"
               />

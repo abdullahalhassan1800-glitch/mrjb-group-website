@@ -20,7 +20,7 @@ export default function HeroSection() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/assets/hero-BzCPA9qb.png"
+          src="assets/hero-BzCPA9qb.png"
           alt="Kunj Bihari Enclave"
           className="w-full h-full object-cover opacity-30"
         />
@@ -135,7 +135,7 @@ export default function HeroSection() {
             {/* Large Image */}
             <div className="col-span-1 row-span-2 rounded-2xl overflow-hidden shadow-2xl shadow-black/30">
               <img
-                src="/assets/hero-BzCPA9qb.png"
+                src="assets/hero-BzCPA9qb.png"
                 alt="Kunj Bihari Enclave Township"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -143,7 +143,7 @@ export default function HeroSection() {
             {/* Top Right */}
             <div className="rounded-2xl overflow-hidden shadow-2xl shadow-black/30">
               <img
-                src="/assets/hero-building-2.png"
+                src="assets/hero-building-2.png"
                 alt="Premium Residential Plot"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -151,7 +151,7 @@ export default function HeroSection() {
             {/* Bottom Right */}
             <div className="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 relative">
               <img
-                src="/assets/hero-building-3.png"
+                src="assets/hero-building-3.png"
                 alt="Modern Township Infrastructure"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
